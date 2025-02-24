@@ -1,0 +1,90 @@
+*{margin: 0;
+padding: 0;
+box-sizing: 0;}
+/* estilos del header */
+header{font-family: Arial;
+background-color: #FEFAEF;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.menuHeader{display: flex;
+flex-direction: row;
+list-style: none;
+margin: 0 20px
+}
+a {
+color: #323232;
+text-decoration: none;
+}
+/* estilos del body */
+body{background-color:#F1B836;
+font-family: Helvetica;
+color: white;}
+/* estilos de los títulos h1 */
+h1{text-align: center;
+font-weight: bold;
+font-family: "Londrina Solid", serif ;
+color:#323232;
+}
+.bannerInicio {width: 100%;}
+/* estilos de los párrafos */
+p{font-size: 16px;
+margin: 20px;}
+/* estilos de las boxmodel*/
+.boxmodel {
+    margin-top: 10px;
+}
+/* estilos de los subtítulos de Recursos TIC*/
+.contenedor {
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+}
+/* estilos de las tablas grid Recursos TIC*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: auto auto auto; 
+    gap: 5px;
+    justify-items: center;
+    align-items: top;
+}
+.grid-item img {
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+.subtitlePage {font-family: "Montserrat", serif;}
+/* estilos de los links de Recursos TIC */
+.linksResaltados {
+    font-size: 16px;
+    text-decoration: none;
+    color: blue;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+  }
+
+  .linksResaltados:hover {
+    font-size: 20px;
+    transform: scale(1.1);
+    font-weight: bold;
+  }
+  .linksResaltadosBlanco {
+    font-size: 16px;
+    text-decoration: none;
+    color: #323232;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+  }
+
+  .linksResaltadosBlanco:hover {
+    font-size: 20px;
+    transform: scale(1.1);
+    font-weight: bold;
+  }
+/* estilos de las secciones */
+.articleClaro{background-color: #FEFAEF;
+color:#323232 ;}
+/* estilos del footer */
+footer{color:#323232;
+    background-color: #FEFAEF}
