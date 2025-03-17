@@ -7,17 +7,29 @@ background-color: #FEFAEF;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+align-items: center;
 }
-.menuHeader{display: flex;
-flex-direction: row;
-list-style: none;
-margin: 0 20px
+.menuHeader {
+  display: flex;
+  gap: 20px; 
+  list-style: none;
+  padding: 0;
+}
+.menuHeader a:hover {
+  color: white; 
+  text-shadow: 2px 2px 5px #ff85c080;
+  background-color: #EDBEA4; 
+  transition: all 0.3s ease-in-out;
 }
 a {
 color: #323232;
 text-decoration: none;
 }
 /* estilos del body */
+.titularGradiente {
+  background: rgb(241,184,54);
+  background: linear-gradient(90deg, rgba(241,184,54,1) 66%, rgba(249,216,198,1) 100%);
+}
 body{background-color:#F1B836;
 font-family: Helvetica;
 color: white;}
@@ -27,7 +39,32 @@ font-weight: bold;
 font-family: "Londrina Solid", serif ;
 color:#323232;
 }
-.bannerInicio {width: 100%;}
+/* Estilos y efectos de los banners de la página de inicio */
+.bannerContainer {
+  display: flex;
+  flex-wrap: wrap; 
+  padding: 0; 
+}
+.bannerInicio {
+  flex: 1 1 100%; 
+  max-width: 100%; 
+  margin: 0; 
+  overflow: hidden; 
+}
+.bannerInicio img {
+  width: 100%; 
+  height: auto; 
+  transition: transform 0.5s ease;
+}
+/* Efecto hover: zoom al pasar el mouse */
+.bannerInicio:hover img {
+  transform: scale(1.1); 
+}
+@media (max-width: 768px) {
+  .bannerInicio {
+      flex: 1 1 100%;
+  }
+}
 /* estilos de los párrafos */
 p{font-size: 16px;
 margin: 20px;}
@@ -85,6 +122,36 @@ margin: 20px;}
 /* estilos de las secciones */
 .articleClaro{background-color: #FEFAEF;
 color:#323232 ;}
+/* estilos de las tablas de Materiales y recursos */
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  background-color: #F2BBA1;
+}
+  th:hover{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  background: #ff85c080;
+}
+th {
+  padding: 10px;
+}
+.special-table {
+  background-color: #f1b836;
+  padding: 10px;
+}
 /* estilos del footer */
-footer{color:#323232;
-    background-color: #FEFAEF}
+footer {
+  display: flex;
+  flex-direction: column; 
+  padding: 20px;
+  background-color: #FEFAEF;
+  color: #323232;
+}
+.iconosFooter {
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 10px; 
+  margin-top: 20px;
+}
